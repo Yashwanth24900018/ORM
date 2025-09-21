@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Inventory</title>
+</head>
+<body>
+    <h1>Car Inventory</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th><th>Brand</th><th>Model</th><th>Year</th><th>Price</th><th>Mileage</th>
+        </tr>
+        {% for car in cars %}
+        <tr>
+            <td>{{ car.car_id }}</td>
+            <td>{{ car.brand }}</td>
+            <td>{{ car.model }}</td>
+            <td>{{ car.year }}</td>
+            <td>{{ car.price }}</td>
+            <td>{{ car.mileage }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
